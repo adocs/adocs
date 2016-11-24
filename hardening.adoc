@@ -2,11 +2,12 @@
 
 .Comparison Table
 [options="header"]
-|================================
-|               | Alpine | Debian
-| IPv6 tempaddr | 0      | 
-| grsecurity    | 1      | 0
-|================================
+|==================================
+|                 | Alpine | Debian
+| IPv6 tempaddr   | 0      | 
+| grsecurity      | 1      | 0
+| Disc Encryption | 1      | 1
+|==================================
 
 == Notes
 
