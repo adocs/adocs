@@ -1,0 +1,13 @@
+== Hardening Alpine Linux
+.Comparison Table
+[options="header"]
+|================================
+|               | Alpine | Debian
+| IPv6 tempaddr | 0      | 
+
+
+=== Notes
+==== IPv6 tempaddr
+Alpine Linux won't use RFC 4941 privacy extensions by default. However they can be activated by sysctl.
+[source]
+echo "net.ipv6.conf.eth0.use_tempaddr = 2" >> /etc/sysctl.d/00-ipv6-privacy.conf
